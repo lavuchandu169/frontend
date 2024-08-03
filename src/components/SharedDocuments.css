@@ -1,0 +1,75 @@
+.shared-documents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.shared-documents h2 {
+  margin-bottom: 20px;
+}
+
+.document-headers {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.document-headers .file-name,
+.document-headers .owner-name,
+.document-headers .shared-date,
+.document-headers .permissions,
+.document-headers .actions {
+  width: 18%;
+  text-align: left;
+}
+
+.shared-documents ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.shared-documents ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.document-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.file-name,
+.owner-name,
+.shared-date,
+.permissions {
+  width: 18%;
+  text-align: left;
+}
+
+.document-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.icon-button:hover {
+  color: #0056b3;
+}
