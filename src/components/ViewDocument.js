@@ -4,7 +4,7 @@ import "./ViewDocument.css";
 import { setLoginUser } from "../redux/loginSlice";
 import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://server-y7e1.onrender.com");
 
 const ViewDocument = () => {
   const currentUser = useSelector((state) => state.login.loginUser);
