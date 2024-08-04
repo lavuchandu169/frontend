@@ -5,7 +5,7 @@ import "./EditDocument.css";
 import io from "socket.io-client";
 import { setLoginUser } from "../redux/loginSlice";
 import { useNavigate } from "react-router-dom";
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://server-y7e1.onrender.com");
 
 const EditDocument = () => {
   const currentUser = useSelector((state) => state.login.loginUser);
