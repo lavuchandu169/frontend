@@ -28,7 +28,7 @@ const SharedDocuments = () => {
         if (res.status === 200) {
           res.json().then((res) => {
             dispatch(setLoginUser(res.userId));
-            fetch("http://127.0.0.1:5000/getSharedDocuments", {
+            fetch("https://backend-7ksj.onrender.com/getSharedDocuments", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
