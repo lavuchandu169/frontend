@@ -6,7 +6,7 @@ const LogoutPopup = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLogout = () => {
-    fetch("http://127.0.0.1:5000/logout", {
+    fetch("https://backend-7ksj.onrender.com/logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
