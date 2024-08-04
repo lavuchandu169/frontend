@@ -9,7 +9,7 @@ const RenamePopup = ({ fileId, fileName, onClose }) => {
   const dispatch = useDispatch();
 
   const handleRename = () => {
-    fetch("http://127.0.0.1:5000/renameDocument", {
+    fetch("https://backend-7ksj.onrender.com/renameDocument", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
